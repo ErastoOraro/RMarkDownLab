@@ -1,0 +1,64 @@
+---
+title: "HOW TO USE SETS IN R"
+author: "Erasto Oraro"
+date: "2/7/2021"
+output: pdf_document
+---
+***
+# Data Structures - Set
+
+Sets define a ‘collection’ of objects, or things typically referred to as ‘elements’ or ‘members.’ The concept of sets arises naturally when dealing with any collection of objects, whether it be a group of numbers or anything else. Conceptually, the following examples can be defined as a ‘set’:
+
+* {1, 2, 3, 4} 
+* {Red, Green, Blue} 
+* {Cat, Dog} 
+
+## Set Operations
+Declare sets
+```{r}
+x <- c(1,2,5,13,6)
+x
+```
+```{r}
+y <- c(5,1,8,9,10,13,20)
+y
+```
+
+R includes some handy set operations, including these:
+
+1. union(x,y):- Union of the sets x and y -> ($x\cup y$).
+  
+2. intersect(x,y):- Intersection of the sets x and y -> ($x\cap y$).
+
+3. setdiff(x,y):- Set difference between x and y, consisting of all elements of x that are not in y -> ($x\setminus y$).
+
+4. setequal(x,y):- Test for equality between x and y
+
+5. c %in% y:- Membership, testing whether c is an element of the set y
+
+6. choose(n,k):- Number of possible subsets of size k chosen from a set of size n
+
+\newpage
+**Examples:**
+
+```{r}
+
+union(x,y)
+
+intersect(x,y)
+
+setdiff(x,y)
+
+setdiff(y,x)
+
+setequal(x,y)
+
+setequal(x,c(1,2,5))
+
+2 %in% x
+
+2 %in% y
+
+choose(5,2)
+
+```
