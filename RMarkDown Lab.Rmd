@@ -1,7 +1,7 @@
 ---
 title: "HOW TO USE SETS IN R"
 author: "Erasto Oraro"
-date: "2/7/2021"
+date: "7-02-2021"
 output: pdf_document
 ---
 ***
